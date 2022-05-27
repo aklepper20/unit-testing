@@ -16,9 +16,9 @@ describe("reverseWord(word)", function () {
   });
 
   it('returns "eoJydoC" for "CodyJoe"', function () {
-    var input = "LearningFuze";
+    var input = "CodyJoe";
     var output = reverseWord(input);
-    expect(output).to.equal("ezuFgninraeL");
+    expect(output).to.equal("eoJydoC");
   });
 
   it('returns "JavaScript" for "tpircSavaJ"', function () {
