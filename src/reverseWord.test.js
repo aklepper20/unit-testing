@@ -4,32 +4,32 @@ describe("reverseWord(word)", function () {
   });
 
   it('returns "oof" for "foo"', function () {
-    var input = "foo";
-    var output = reverseWord(input);
+    const input = "foo";
+    const output = reverseWord(input);
     expect(output).to.equal("oof");
   });
 
   it('returns "bar" for "rab"', function () {
-    var input = "rab";
-    var output = reverseWord(input);
+    const input = "rab";
+    const output = reverseWord(input);
     expect(output).to.equal("bar");
   });
 
   it('returns "eoJydoC" for "CodyJoe"', function () {
-    var input = "CodyJoe";
-    var output = reverseWord(input);
+    const input = "CodyJoe";
+    const output = reverseWord(input);
     expect(output).to.equal("eoJydoC");
   });
 
   it('returns "JavaScript" for "tpircSavaJ"', function () {
-    var input = "tpircSavaJ";
-    var output = reverseWord(input);
+    const input = "tpircSavaJ";
+    const output = reverseWord(input);
     expect(output).to.equal("JavaScript");
   });
 
   it('returns "racecar" for "racecar"', function () {
-    var input = "racecar";
-    var output = reverseWord(input);
+    const input = "racecar";
+    const output = reverseWord(input);
     expect(output).to.equal("racecar");
   });
 });

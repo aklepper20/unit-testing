@@ -4,11 +4,11 @@ describe("getKeys(object)", function () {
   });
 
   it("returns Dave's property keys", function () {
-    var dave = {
+    const dave = {
       firstName: "David",
       lastName: "Thomas",
     };
-    var output = getKeys(dave);
+    const output = getKeys(dave);
     expect(output)
       .to.be.an("array")
       .with.length(2)
@@ -17,12 +17,12 @@ describe("getKeys(object)", function () {
   });
 
   it("returns Target's property keys", function () {
-    var Target = {
+    const Target = {
       latitude: 33.6349,
       attitude: "sanguine",
       longitude: 117.7405,
     };
-    var output = getKeys(Target);
+    const output = getKeys(Target);
     expect(output)
       .to.be.an("array")
       .with.length(3)
@@ -32,8 +32,8 @@ describe("getKeys(object)", function () {
   });
 
   it("returns Tim's property keys", function () {
-    var tim = {};
-    var output = getKeys(tim);
+    const tim = {};
+    const output = getKeys(tim);
     expect(output).to.deep.equal([]);
   });
 });

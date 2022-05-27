@@ -4,26 +4,26 @@ describe("reverse(array)", function () {
   });
 
   it('returns ["foo", "bar", "baz"] in reverse', function () {
-    var input = ["foo", "bar", "baz"];
-    var output = reverse(input);
+    const input = ["foo", "bar", "baz"];
+    const output = reverse(input);
     expect(output).to.deep.equal(["baz", "bar", "foo"]);
   });
 
   it("returns [1, 2, 3, 4, 5] in reverse", function () {
-    var input = [1, 2, 3, 4, 5];
-    var output = reverse(input);
+    const input = [1, 2, 3, 4, 5];
+    const output = reverse(input);
     expect(output).to.deep.equal([5, 4, 3, 2, 1]);
   });
 
   it("returns [false, true, false, true] in reverse", function () {
-    var input = [false, true, false, true];
-    var output = reverse(input);
+    const input = [false, true, false, true];
+    const output = reverse(input);
     expect(output).to.deep.equal([true, false, true, false]);
   });
 
   it("returns [] (empty array) for []", function () {
-    var input = [];
-    var output = reverse(input);
+    const input = [];
+    const output = reverse(input);
     expect(output).to.deep.equal(input);
   });
 });

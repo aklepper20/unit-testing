@@ -4,26 +4,26 @@ describe("head(array)", function () {
   });
 
   it('returns "foo" for ["foo", "bar", "baz"]', function () {
-    var input = ["foo", "bar", "baz"];
-    var output = head(input);
+    const input = ["foo", "bar", "baz"];
+    const output = head(input);
     expect(output).to.equal("foo");
   });
 
   it("returns 1 for [1, 2, 3, 4, 5]", function () {
-    var input = [1, 2, 3, 4, 5];
-    var output = head(input);
+    const input = [1, 2, 3, 4, 5];
+    const output = head(input);
     expect(output).to.equal(1);
   });
 
   it("returns false for [false, true, false, true]", function () {
-    var input = [false, true, false, true];
-    var output = head(input);
+    const input = [false, true, false, true];
+    const output = head(input);
     expect(output).to.equal(false);
   });
 
   it("returns undefined for [] (empty arrays)", function () {
-    var input = [];
-    var output = head(input);
+    const input = [];
+    const output = head(input);
     expect(output).to.equal(undefined);
   });
 });

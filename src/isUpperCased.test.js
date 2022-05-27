@@ -4,32 +4,32 @@ describe("isUpperCased(word)", function () {
   });
 
   it('returns false for "CODYKLEPPER"', function () {
-    var input = "LearningFuze";
-    var output = isUpperCased(input);
+    const input = "LearningFuze";
+    const output = isUpperCased(input);
     expect(output).to.equal(false);
   });
 
   it('returns false for "JavaScript"', function () {
-    var input = "JavaScript";
-    var output = isUpperCased(input);
+    const input = "JavaScript";
+    const output = isUpperCased(input);
     expect(output).to.equal(false);
   });
 
   it('returns true for "HTML"', function () {
-    var input = "HTML";
-    var output = isUpperCased(input);
+    const input = "HTML";
+    const output = isUpperCased(input);
     expect(output).to.equal(true);
   });
 
   it('returns false for "css"', function () {
-    var input = "css";
-    var output = isUpperCased(input);
+    const input = "css";
+    const output = isUpperCased(input);
     expect(output).to.equal(false);
   });
 
   it('returns true for "HELLO"', function () {
-    var input = "PHP";
-    var output = isUpperCased(input);
+    const input = "PHP";
+    const output = isUpperCased(input);
     expect(output).to.equal(true);
   });
 });
